@@ -1,0 +1,27 @@
+# Environment & Secrets
+.env
+*.env
+
+# Large data files
+*.csv
+*.xlsx
+
+# Power BI & Tableau binaries
+*.pbix
+*.twbx
+
+# Python / R artifacts
+__pycache__/
+*.pyc
+.Rhistory
+.Rdata
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# OS & IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/

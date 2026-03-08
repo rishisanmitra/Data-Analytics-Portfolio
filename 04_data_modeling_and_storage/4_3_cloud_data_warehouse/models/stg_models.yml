@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: stg_crm_cust_info
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_crm_prd_info
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: product_key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_crm_sales_details
+    columns:
+      # We only test for not_null here, not unique, because one order can have multiple line items (products)
+      - name: order_number
+        tests:
+          - not_null
+      - name: product_key
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: stg_erp_cust_az12
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_erp_loc_a101
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_erp_px_cat_g1v2
+    columns:
+      - name: category_id
+        tests:
+          - unique
+          - not_null
