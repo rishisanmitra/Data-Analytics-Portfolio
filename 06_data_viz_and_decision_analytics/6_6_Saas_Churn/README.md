@@ -36,7 +36,7 @@ The analysis is delivered via a dynamic, dark-themed enterprise dashboard. Since
 
 ### Visual Assets
 
-![Looker Studio Dashboard](assets/looker_Dashboard.png)
+![Looker Studio Dashboard](assets/looker_dashboard.png)
 
 
 ## Technical Workflow
